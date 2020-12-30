@@ -1,0 +1,40 @@
+{
+  "name": "@kelleyvanevert/ascii-morph",
+  "version": "0.0.1",
+  "description": "Tim Holman's AsciiMorph library in an npm package",
+  "author": "Kelley van Evert <kelley@mywheels.nl>",
+  "license": "MIT",
+  "source": "src/index.ts",
+  "main": "build/AsciiMorph.esm.js",
+  "esm": "build/AsciiMorph.esm.js",
+  "unpkg": "build/AsciiMorph.umd.js",
+  "browser": "build/AsciiMorph.umd.js",
+  "types": "build/src/AsciiMorph.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kelleyvanevert/ascii-morph"
+  },
+  "files": [
+    "package.json",
+    "readme.md",
+    "license.md",
+    "build/**/*"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "clean": "rm -rf build",
+    "build": "rollup -c",
+    "prepare": "yarn build"
+  },
+  "devDependencies": {
+    "@rollup/plugin-json": "^4.1.0",
+    "microbundle": "^0.12.4",
+    "rollup": "^2.35.1",
+    "rollup-plugin-sourcemaps": "^0.6.3",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.29.0",
+    "tslib": "^2.0.3",
+    "typescript": "^4.1.3"
+  },
+  "prettier": {}
+}
