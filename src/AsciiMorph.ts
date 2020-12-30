@@ -8,7 +8,7 @@
 import { version } from "../package.json";
 
 export default class AsciiMorph {
-  version = version;
+  static version = version;
 
   renderedData: string[] = [];
   framesToAnimate: string[][] = [];
